@@ -1,0 +1,15 @@
+'''Mean Square Error (MSE), R-square, and
+Standard Error (SE)'''
+
+
+''' R-square: it's tells us how well a regression line predict or estimate actual values '''
+x = df1["x1"]
+y = df1["y"]
+y_m = np.mean(y)
+
+#np.sum((y-y_m)**2)
+y_e = np.array((b[0] + b[1]*x))
+print("y estimate value = ",y_e)
+#print(np.sum((y_e - y_m)**2))
+print("******************************************************")
+print("R-square = " ,np.sum((y_e - y_m)**2)/np.sum((y-y_m)**2))
