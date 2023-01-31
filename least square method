@@ -25,3 +25,7 @@ def plot_regression_line(x, y, b):
   
     # function to show plot
     plt.show()
+
+b = find_b(df1["x1"],df1["y"])
+print(b)
+plot_regression_line(df1["x1"], df1["y"], b)
