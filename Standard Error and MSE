@@ -1,0 +1,11 @@
+import math 
+  
+n = np.size(x)
+re = np.sum((y_e - y)**2)
+formula = re/(n-2)
+SE = math.sqrt(formula)
+print("Standard Error (SE) : ",SE)
+
+'''Mean Square Error (MSE)'''
+mse = re/n ''' n is no of observatin'''
+print(mse)
